@@ -163,7 +163,7 @@ def make_streamlit_electric_Charging_resid(dfr1, dfr2, gdfr1, gdfr2):
     # Create a Folium map
     m = folium.Map(location=[52.52, 13.40], zoom_start=10)
 
-    if layer_selection == "Residents":
+    if layer_selection == "Number of Residents per PLZ (Postal code)":
         
         # Create a color map for Residents
         color_map = LinearColormap(colors=['yellow', 'red'], vmin=dframe2['Einwohner'].min(), vmax=dframe2['Einwohner'].max())
@@ -190,7 +190,7 @@ def make_streamlit_electric_Charging_resid(dfr1, dfr2, gdfr1, gdfr2):
 
         color_map = LinearColormap(colors=['yellow', 'red'], vmin=dframe1['Number'].min(), vmax=dframe1['Number'].max())
 
-    # Add polygons to the map for Numbers
+        # Add polygons to the map for Numbers
         for idx, row in dframe1.iterrows():
             folium.GeoJson(
                 row['geometry'],
