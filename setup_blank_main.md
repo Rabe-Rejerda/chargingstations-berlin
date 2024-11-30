@@ -19,7 +19,7 @@ At last you need to call the method _make_streamlit_electric_Charging_resid_ fro
 It takes in the two dataframes, the one containing the data from _Ladesaeulenregister.csv_ needs to be given first.
 
 ### Further Changes
-I am not sure why, but the _preprop_lstat_ removes the number of charging_stations. It needs to be added.<br>
+The function _preprop_lstat_ removes the number of charging_stations. These need to be added.<br>
 prior:
 
     dframe2               	= dframe.loc[:,['Postleitzahl', 'Bundesland', 'Breitengrad', 'Längengrad', 'Nennleistung Ladeeinrichtung [kW]']]
