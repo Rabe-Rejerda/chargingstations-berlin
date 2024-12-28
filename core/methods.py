@@ -1,4 +1,4 @@
-"""Contains methods to """
+"""Contains methods to prepare the data"""
 
 
 # Third party imports
